@@ -11,7 +11,8 @@
 		</ul>
 
 		<script type="text/javascript">
-			var socket = io.connect('http://localhost');
+			//var socket = io.connect('http://localhost');
+			var socket = io.connect('http://fast-escarpment-9151.herokuapp.com');
 				var ul = document.getElementById("tweets");
 				socket.on('tweet', function (tweet) {
 					var li = document.createElement("li");
@@ -23,3 +24,4 @@
 		</script>
 	</body>
 </html>
+
